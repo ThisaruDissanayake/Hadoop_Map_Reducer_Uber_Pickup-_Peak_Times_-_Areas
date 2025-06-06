@@ -147,4 +147,6 @@ jar -cvf Analizedata.jar -C classes/ .
 Deploy more Uber drivers between 3 PM to 9 PM, especially 5 PM
 Focus coverage around latitude 41 and longitude -74 (NYC urban core)
 ---
+## 📄 Avidanve
+
 [📄 View Avidances.pdf](https://github.com/ThisaruDissanayake/Hadoop_Map_Reducer_Uber_Pickup-_Peak_Times_-_Areas/raw/master/Avidance/Avidances.pdf)
