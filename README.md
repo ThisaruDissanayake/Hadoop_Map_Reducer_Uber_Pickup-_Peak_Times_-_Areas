@@ -63,8 +63,8 @@ We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this pr
 
  ## 📁 File Structure
   <pre> 
-   ├── input/ │
-   └── data3.txt # Uber pickup dataset (April 2014) 
+   ├── input/
+   │└── data3.txt # Uber pickup dataset (April 2014) 
    ├── src/ 
    │ ├── WC_Mapper.java 
    │ ├── WC_Reducer.java 
