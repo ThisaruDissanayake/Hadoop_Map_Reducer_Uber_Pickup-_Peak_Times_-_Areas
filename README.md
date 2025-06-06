@@ -22,6 +22,30 @@ Refer: [phoenixNAP Hadoop Setup Guide](https://phoenixnap.com/kb/install-hadoop-
 
 ---
 
+## 📦 Dataset Description
+
+### 📂 Source:
+- Dataset: **Uber Pickups in New York City**
+- Provider: [FiveThirtyEight on Kaggle](https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city)
+- License: Open data shared for analysis and visualization purposes.
+
+### 📅 Data Used:
+We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this project to keep the scope manageable and focused.
+
+### 🔍 Sample Rows:
+
+- `Date/Time`: Timestamp of pickup  
+- `Lat` / `Lon`: Latitude and Longitude of pickup location  
+- `Base`: Uber dispatching base code (e.g., B02512)
+
+### 🧼 Data Preprocessing:
+- Only **April** records were used from the full dataset
+- Fields were cleaned by change the time and data structure and used as-is for MapReduce parsing
+- The final input file used was named: `data.txt` (stored in the `/input/` folder)
+
+
+---
+
  ## 📁 File Structure
   <pre> 
    ├── input/ │
