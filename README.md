@@ -99,3 +99,30 @@ jar -cvf Analizedata.jar -C classes/ .
 
    <pre>hdfs dfs -cat /output/part-r-00000
 </pre>
+
+---
+
+📊 Result Summary
+⏰ Peak Pickup Hours
+Hour	Pickups
+17	45,475
+18	43,003
+19	38,923
+21	36,964
+20	36,244
+
+📌 Peak hours fall between 3 PM and 9 PM, with the maximum around 5 PM.
+
+📍 Pickup Location Hotspots
+Location (Lat, Lon)	Pickups
+LOC_41,-74	564,238
+LOC_41,-73	186
+LOC_40,-74	42
+
+📌 Main location hotspot is at 41°N, 74°W — corresponds to NYC metro area.
+
+🧠 Recommendation
+Deploy more Uber drivers between 3 PM to 9 PM, especially 5 PM
+
+Focus coverage around latitude 41 and longitude -74 (NYC urban core)
+---
