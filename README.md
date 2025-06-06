@@ -1,6 +1,21 @@
 # 🚖 Uber Pickup Analysis using Hadoop MapReduce
 
-This project analyzes Uber pickup data using Hadoop MapReduce. It identifies **peak hours** and **hotspot locations** based on real pickup records, offering insights to optimize fleet distribution and service planning.
+This project focuses on analyzing Uber pickup patterns in New York City during April 2014, using Apache Hadoop MapReduce. The goal is to identify the peak hours and hotspot locations for Uber rides, which can help in better ride allocation, driver scheduling, and business optimization.
+The processing is done using a single-node Hadoop cluster set up on Ubuntu, and Java-based MapReduce programs are written to perform the data aggregation based on time (hourly) and location (rounded latitude/longitude). The final output helps visualize Uber usage trends, identify the most active hours, and locate the highest density pickup zones
+
+## ⚙️ Technologies Used
+
+| Tool / Technology     | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| **Ubuntu 24.10**      | Operating system for setting up the local Hadoop environment                |
+| **Apache Hadoop**     | Framework used for distributed storage (HDFS) and data processing (MapReduce)|
+| **Hadoop HDFS**       | Hadoop Distributed File System for storing input/output data                |
+| **Java 8+**           | Programming language used for developing Mapper, Reducer, and Runner classes|
+| **MapReduce**         | Data processing model used to aggregate Uber pickup data                    |
+| **Kaggle Dataset**    | Real-world Uber pickup data used for analysis (April 2014 subset)           |
+| **Terminal & SSH**    | Used for compiling, running Hadoop jobs and accessing HDFS                  |
+| **Browser (localhost)**| To access Hadoop Resource Manager UI (`http://localhost:8088/`)             |
+
 
 ---
 
@@ -128,8 +143,6 @@ jar -cvf Analizedata.jar -C classes/ .
 | LOC_40,-74          | 42       |
 
 📌 Main location hotspot is at 41°N, 74°W — corresponds to NYC metro area.
-
-####Recommendation
 
 Deploy more Uber drivers between 3 PM to 9 PM, especially 5 PM
 Focus coverage around latitude 41 and longitude -74 (NYC urban core)
