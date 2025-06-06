@@ -64,8 +64,8 @@ We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this pr
 
    ---
 
-   ## Step to Run the Project 
-   ### Initiate login Start Hadoop Cluster
+   ## ▶️ Step to Run the Project 
+   ### 1.Initiate login Start Hadoop Cluster
 
    <pre>start-dfs.sh
 start-yarn.sh</pre>
