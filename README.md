@@ -41,7 +41,7 @@ We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this pr
 ### 🧼 Data Preprocessing:
 - Only **April** records were used from the full dataset
 - Fields were cleaned by change the time and data structure and used as-is for MapReduce parsing
-- The final input file used was named: `data.txt` (stored in the `/input/` folder)
+- The final input file used was named: `data3.txt` (stored in the `/input/` folder)
 
 
 ---
