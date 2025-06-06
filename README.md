@@ -22,7 +22,8 @@ Refer: [phoenixNAP Hadoop Setup Guide](https://phoenixnap.com/kb/install-hadoop-
 
 ---
 
- <pre>  ## 📁 File Structure 
+ ## 📁 File Structure
+  <pre> 
    ├── input/ │
    └── data3.txt # Uber pickup dataset (April 2014) 
    ├── src/ 
