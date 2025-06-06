@@ -22,5 +22,18 @@ Refer: [phoenixNAP Hadoop Setup Guide](https://phoenixnap.com/kb/install-hadoop-
 
 ---
 
-<pre> ``` ## 📁 File Structure ├── input/ │ └── data3.txt # Uber pickup dataset (April 2014) ├── src/ │ ├── Mapper.java │ ├── Reducer.java │ └── Runner.java ├── classes/ │ ├── WC_Mapper.class │ ├── WC_Reducer.class │ └── WC_Runner.class ├── Analizedata.jar # JAR file containing the MapReduce code ├── output/ # HDFS output directory (created during execution) └── output.txt # Local copy of results ``` </pre>
+ ## 📁 File Structure 
+   ├── input/ │
+   └── data3.txt # Uber pickup dataset (April 2014) 
+   ├── src/ 
+   │ ├── Mapper.java 
+   │ ├── Reducer.java 
+   │ └── Runner.java 
+   ├── classes/ 
+   │ ├── WC_Mapper.class 
+   │ ├── WC_Reducer.class 
+   │ └── WC_Runner.class 
+   ├── Analizedata.jar # JAR file containing the MapReduce code 
+   ├── output/ # HDFS output directory (created during execution) 
+   └── output.txt # Local copy of results 
 
