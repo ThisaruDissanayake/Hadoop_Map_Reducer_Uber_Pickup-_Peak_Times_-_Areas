@@ -64,9 +64,14 @@ We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this pr
 
    ---
 
-   ## Step to Run the MapReduer 
+   ## Step to Run the Project 
+   ### Initiate login Start Hadoop Cluster
 
-   ### Create Input Directory and Upload Dataset
+   <pre>start-dfs.sh
+start-yarn.sh</pre>
+   
+
+   ### 2.Create Input Directory and Upload Dataset
 
    <pre>mkdir input
 # Place your `data.txt` inside the input directory
@@ -74,3 +79,23 @@ We selected **April 2014** data (from the `uber-raw-data-apr14.csv`) for this pr
 hdfs dfs -mkdir /input
 hdfs dfs -put input/data.txt /input/</pre>
 
+   ### 3.Create the Java files
+
+   Make the Mapper.java,Reducer.java and Runner.java files inside the src folder
+
+   ### 4.Compile Java Code and Create JAR
+
+   <pre>mkdir -p classes
+javac -classpath "$(hadoop classpath)" -d classes src/*.java
+jar -cvf Analizedata.jar -C classes/ .
+</pre>
+
+   ### 5.Run the Hadoop Job
+
+   <pre>hadoop jar Analizedata.jar WC_Runner /input /output
+</pre>
+
+   ### 6.View Output
+
+   <pre>hdfs dfs -cat /output/part-r-00000
+</pre>
