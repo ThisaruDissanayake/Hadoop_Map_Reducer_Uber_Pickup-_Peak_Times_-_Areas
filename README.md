@@ -27,9 +27,9 @@ Refer: [phoenixNAP Hadoop Setup Guide](https://phoenixnap.com/kb/install-hadoop-
    ├── input/ │
    └── data3.txt # Uber pickup dataset (April 2014) 
    ├── src/ 
-   │ ├── Mapper.java 
-   │ ├── Reducer.java 
-   │ └── Runner.java 
+   │ ├── WC_Mapper.java 
+   │ ├── WC_Reducer.java 
+   │ └── WC_Runner.java 
    ├── classes/ 
    │ ├── WC_Mapper.class 
    │ ├── WC_Reducer.class 
